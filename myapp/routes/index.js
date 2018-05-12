@@ -102,7 +102,8 @@ async function emailUsers (emailIds, rId) {
       from: 'no-reply@tagdabe.com',
       to: email,
       subject: 'Password shared on slack.',
-      text: 'A password has been shared with you. Find it on the link below: http://tagdabe.com/rId'
+      text: 'A password has been shared with you.' +
+      ' Find it on the link below: ' + globalConst.WEBSITE_URL + '/' + rId
     }, (err, info) => {
       console.log(info.envelope)
       console.log(info.messageId)
