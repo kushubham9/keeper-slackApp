@@ -10,6 +10,12 @@
 ## How it works?
 Any sensitive information shared with a team or a person will not be posted as message over slack. Keeper will generate a safe link which will be shared over the user's email address.
 
+## Sharing
+The information can be shared with multiple people or with a whole channel. When a channel is mentioned, the password will be shared with all users who are part of the channel.
+
+```
+/password @member1 @member2 #channelName "password" "Title (optional)" "Description (optional)"
+```
 
 ## Installation
 1. Clone the app
